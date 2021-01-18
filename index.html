@@ -24,7 +24,7 @@
             <img src="images/LogoMakr-2.png" width="125px" />
           </div>
           <nav>
-            <ul>
+            <ul id="MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
@@ -33,6 +33,7 @@
             </ul>
           </nav>
           <img src="images/cart.png" width="30px" height="30px" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/>
         </div>
         <div class="row">
           <div class="col-2">
@@ -245,5 +246,145 @@
         </div>
       </div>
     </div>
+
+    <!-- ---------- testiimial -------------- -->
+    <div class="testmonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+              ratione ea nihil alias aliquid sapiente rerum dicta doloremque,
+              ipsam qui nesciunt cum possimus
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/user-1.png" />
+            <h3>Daniel silive</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+              ratione ea nihil alias aliquid sapiente rerum dicta doloremque,
+              ipsam qui nesciunt cum possimus
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/user-2.png" />
+            <h3>Mohamed Abje</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+              ratione ea nihil alias aliquid sapiente rerum dicta doloremque,
+              ipsam qui nesciunt cum possimus
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/user-3.png" />
+            <h3>Fiona Smith</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- brands -------------  -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-godrej.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-paypal.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-paypal.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-coca-cola.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-oppo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- footer -------  -->
+    <div class="footer">
+      <div class="continer">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/LogoMakr-2.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sport Accessible to the Many.
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2021 - DLCC</p>
+      </div>
+    </div>
+
+    <!-- --------------js for toggle menu -------------  -->
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0"
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight === "0px"){
+            MenuItems.style.maxHeight = "200px"
+        }else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+    </script>
   </body>
 </html>
